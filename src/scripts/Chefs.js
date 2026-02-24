@@ -16,7 +16,11 @@ export default class Chefs {
       //console.log(this.menu);
     }
 
-    const btnOrder = this.element.querySelector('js-commande');
-    console.log(btnOrder);
+    const btnOrder = this.element.querySelector('.js-commande');
+    btnOrder.addEventListener('click', this.sendOrder.bind(this));
+  }
+
+  sendOrder() {
+    //console.log('boutonnn');
   }
 }
