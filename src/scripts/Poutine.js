@@ -25,11 +25,13 @@ export default class Poutine {
     this.selectedType = type.textContent;
     //console.log(this.selectedType);
 
-    //type.addEventListener('click', this.updatePhoto.bind(this));
     this.updatePhoto()
   }
 
   updatePhoto() {
-    console.log('photo');
+    //console.log('photo');
+    const image = this.element.querySelector('.js-image');
+    image.classList.add('is-active');
+    image.src = `assets/images/${this.selectedType}.png`;
   }
 }
