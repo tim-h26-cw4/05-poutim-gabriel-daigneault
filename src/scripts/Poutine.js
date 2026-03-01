@@ -25,7 +25,8 @@ export default class Poutine {
     this.selectedType = type.textContent;
     //console.log(this.selectedType);
 
-    type.addEventListener('click', this.updatePhoto.bind(this));
+    //type.addEventListener('click', this.updatePhoto.bind(this));
+    this.updatePhoto()
   }
 
   updatePhoto() {
