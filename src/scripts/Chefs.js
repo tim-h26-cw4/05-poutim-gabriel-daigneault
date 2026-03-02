@@ -39,5 +39,6 @@ export default class Chefs {
     this.container.appendChild(commande);
 
     console.log(this.total);
+    //aweye push
   }
 }
